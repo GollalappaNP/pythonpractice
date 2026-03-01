@@ -41,3 +41,16 @@ if __name__ == "__main__":
             print()
 
     multiplication_table()
+
+    def find_smallest_number(numbers):
+        if not numbers:
+            return None  # Return None if the list is empty
+        smallest = numbers[0]
+        for num in numbers:
+            if num < smallest:
+                smallest = num
+        return smallest
+
+    # Example usage
+    numbers = [34, 15, 88, 2, 0, -5, 42]
+    print(f"The smallest number in the list is: {find_smallest_number(numbers)}")
