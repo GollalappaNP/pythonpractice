@@ -54,3 +54,36 @@ if __name__ == "__main__":
     # Example usage
     numbers = [34, 15, 88, 2, 0, -5, 42]
     print(f"The smallest number in the list is: {find_smallest_number(numbers)}")
+
+
+    def print_pyramid(rows):
+        for i in range(1, rows + 1):
+            print(" " * (rows - i) + "*" * (2 * i - 1))
+
+    # Example usage
+    rows = 5
+    print_pyramid(rows)
+
+    def print_inverted_pyramid(rows):
+        for i in range(rows, 0, -1):
+            print(" " * (rows - i) + "*" * (2 * i - 1))
+
+    # Example usage
+    rows = 5
+    print_inverted_pyramid(rows)
+
+
+    def login():
+        users = {"admin": "password123", "user1": "mypassword", "user2": "letmein"}
+
+        print("Login Page")
+        username = input("Enter your username: ")
+        password = input("Enter your password: ")
+
+        if username in users and users[username] == password:
+            print("Login successful!")
+        else:
+            print("Invalid username or password.")
+
+    # Example usage
+    login()
