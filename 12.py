@@ -99,3 +99,32 @@ def check_even_odd(number):
 # Example usage
 num = int(input("Enter a number to check if it's even or odd: "))
 check_even_odd(num)
+
+
+
+# Find the largest number in a list
+def find_largest_in_list(numbers):
+    if not numbers:
+        print("The list is empty.")
+        return None
+    largest = max(numbers)
+    print(f"The largest number in the list is {largest}")
+
+# Example usage
+numbers = list(map(int, input("Enter a list of numbers separated by spaces: ").split()))
+find_largest_in_list(numbers)
+
+# Check if a character is a vowel or consonant
+def check_vowel_consonant(char):
+    vowels = "aeiouAEIOU"
+    if len(char) == 1 and char.isalpha():
+        if char in vowels:
+            print(f"The character '{char}' is a vowel.")
+        else:
+            print(f"The character '{char}' is a consonant.")
+    else:
+        print("Please enter a single alphabetic character.")
+
+# Example usage
+char = input("Enter a character to check if it's a vowel or consonant: ")
+check_vowel_consonant(char)
