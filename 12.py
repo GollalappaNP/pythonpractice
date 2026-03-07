@@ -128,3 +128,19 @@ def check_vowel_consonant(char):
 # Example usage
 char = input("Enter a character to check if it's a vowel or consonant: ")
 check_vowel_consonant(char)
+
+
+
+#chocolate problem
+
+def push_zero_to_end(arr):
+    non_zero = [num for num in arr if num != 0]
+    zero_count = len(arr) - len(non_zero)
+    result = non_zero + [0] * zero_count
+    return result
+
+# Example usage
+numbers = list(map(int, input("Enter a list of numbers separated by spaces: ").split()))
+result = push_zero_to_end(numbers)
+print(f"List after pushing zeros to the end: {result}")
+
