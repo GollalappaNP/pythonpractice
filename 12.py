@@ -162,3 +162,14 @@ num = int(input("Enter a number to find its factorial: "))
 result = factorial(num)
 if result is not None:
     print(f"The factorial of {num} is {result}")
+
+    # Sum of digits of a number
+    def sum_of_digits(number):
+        if number < 0:
+            number = -number  # Handle negative numbers
+        return sum(int(digit) for digit in str(number))
+
+    # Example usage
+    num = int(input("Enter a number to find the sum of its digits: "))
+    result = sum_of_digits(num)
+    print(f"The sum of the digits of {num} is {result}")
