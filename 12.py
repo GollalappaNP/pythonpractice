@@ -144,3 +144,21 @@ numbers = list(map(int, input("Enter a list of numbers separated by spaces: ").s
 result = push_zero_to_end(numbers)
 print(f"List after pushing zeros to the end: {result}")
 
+# Factorial of a number
+def factorial(number):
+    if number < 0:
+        print("Factorial is not defined for negative numbers.")
+        return None
+    elif number == 0 or number == 1:
+        return 1
+    else:
+        fact = 1
+        for i in range(2, number + 1):
+            fact *= i
+        return fact
+
+# Example usage
+num = int(input("Enter a number to find its factorial: "))
+result = factorial(num)
+if result is not None:
+    print(f"The factorial of {num} is {result}")
