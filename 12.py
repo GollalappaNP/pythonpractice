@@ -173,3 +173,16 @@ if result is not None:
     num = int(input("Enter a number to find the sum of its digits: "))
     result = sum_of_digits(num)
     print(f"The sum of the digits of {num} is {result}")
+
+    # Bubble Sort
+    def bubble_sort(arr):
+        n = len(arr)
+        for i in range(n - 1):
+            for j in range(n - i - 1):
+                if arr[j] > arr[j + 1]:
+                    arr[j], arr[j + 1] = arr[j + 1], arr[j]
+
+    # Example usage
+    numbers = list(map(int, input("Enter a list of numbers to sort using Bubble Sort, separated by spaces: ").split()))
+    bubble_sort(numbers)
+    print(f"Sorted list: {numbers}")
