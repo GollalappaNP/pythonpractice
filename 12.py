@@ -186,3 +186,10 @@ if result is not None:
     numbers = list(map(int, input("Enter a list of numbers to sort using Bubble Sort, separated by spaces: ").split()))
     bubble_sort(numbers)
     print(f"Sorted list: {numbers}")
+
+    
+    
+if 3 in s:
+        print("3 is in the set")
+    else:
+        print("3 is not in the set")
