@@ -229,3 +229,12 @@ if 3 in s:
         numbers = list(map(int, input("Enter a list of numbers to sort using Merge Sort, separated by spaces: ").split()))
         merge_sort(numbers)
         print(f"Sorted list: {numbers}")
+
+#take a number as input and check if it is positive, negative or zero
+x = float(input("Enter a number: "))
+if x>0:
+    print("Positive")
+elif x<0:
+    print("Negative")
+else:
+    print(zero)
