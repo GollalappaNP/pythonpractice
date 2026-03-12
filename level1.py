@@ -53,3 +53,11 @@ if x > y and x > z:
 elif y > x and y > z:
     print(y)
 else:    print(z)
+
+#take a temperature value and print if it is hot, warm or cold
+temp = float(input("Enter the temperature: "))
+if temp > 30:
+    print("Hot")
+elif temp > 20:
+    print("Warm")
+else:    print("Cold")
