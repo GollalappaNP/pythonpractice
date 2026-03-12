@@ -61,3 +61,10 @@ if temp > 30:
 elif temp > 20:
     print("Warm")
 else:    print("Cold")
+
+
+#take a character as input and check if it is a vowel or consonant
+x = char(input("Enter a character: "))
+if x in ['a', 'e', 'i', 'o', 'u']:
+    print("Vowel")
+else:    print("Consonant")
