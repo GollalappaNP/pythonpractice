@@ -68,3 +68,14 @@ x = char(input("Enter a character: "))
 if x in ['a', 'e', 'i', 'o', 'u']:
     print("Vowel")
 else:    print("Consonant")
+
+
+#take a character and check if it is an uppercase or lowercase letter,a digit or a special character
+x = char(input("Enter a character: "))
+if x.isupper():
+    print("Uppercase letter")
+elif x.islower():
+    print("Lowercase letter")
+elif x.isdigit():
+    print("Digit")
+else:    print("Special character")
