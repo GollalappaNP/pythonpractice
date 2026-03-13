@@ -16,3 +16,12 @@ if is_valid_triangle(side1, side2, side3):
     print("The sides form a valid triangle.")
 else:
     print("The sides do not form a valid triangle.")
+
+#if valid traingle, determine the type of triangle (equilateral, isosceles, or scalene)
+if is_valid_triangle(side1, side2, side3):
+    if side1 == side2 == side3:
+        print("The triangle is equilateral.")
+    elif side1 == side2 or side1 == side3 or side2 == side3:
+        print("The triangle is isosceles.")
+    else:
+        print("The triangle is scalene.")
