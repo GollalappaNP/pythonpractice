@@ -25,3 +25,15 @@ if is_valid_triangle(side1, side2, side3):
         print("The triangle is isosceles.")
     else:
         print("The triangle is scalene.")
+
+#take marks 0-100 and determine the grade (A, B, C, D, F)
+marks = float(input("Enter the marks (0-100): "))
+if marks >= 90:
+    print("Grade: A")
+elif marks >= 80:
+    print("Grade: B")
+elif marks >= 70:
+    print("Grade: C")   
+elif marks >= 60:
+    print("Grade: D")
+else:    print("Grade: F")
