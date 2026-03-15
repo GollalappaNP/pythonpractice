@@ -58,3 +58,9 @@ if current_time >= "00:00:00" and current_time < "12:00:00":
 elif current_time >= "12:00:00" and current_time < "18:00:00":
     print("Good afternoon!")
 else:    print("Good evening!")
+
+#check voting eligibility based on age
+age = int(input("Enter your age: "))
+if age > 18:
+    print("eligible to vote")
+else:    print("not eligible to vote")
