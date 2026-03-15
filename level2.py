@@ -73,3 +73,11 @@ if num1 % 2 == 0 and num2 % 2 == 0:
 elif num1 % 2 != 0 and num2 % 2 != 0:
     print("Both numbers are odd.")
 else:    print("One number is even and the other is odd.")
+
+#take an alphabet and check if it lies between a to m or n to z
+alphabet = input("Enter an alphabet: ").lower()
+if 'a' <= alphabet <= 'm':
+    print(f"{alphabet} lies between a and m.")
+elif 'n' <= alphabet <= 'z':
+    print(f"{alphabet} lies between n and z.")
+else:    print("Invalid input. Please enter a single alphabet.")
