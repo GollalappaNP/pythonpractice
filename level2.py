@@ -47,3 +47,14 @@ if num1 % num2 == 0:
 elif num2 % num1 == 0: 
     print(f"{num2} is a multiple of {num1}.")
 else:    print("Neither number is a multiple of the other.")
+
+
+#time moudule to get the current time and print it in the format HH:MM:SS
+import time
+current_time = time.strftime("%H:%M:%S")
+print("Current time:", current_time)
+if current_time >= "00:00:00" and current_time < "12:00:00":
+    print("Good morning!")
+elif current_time >= "12:00:00" and current_time < "18:00:00":
+    print("Good afternoon!")
+else:    print("Good evening!")
