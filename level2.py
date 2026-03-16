@@ -103,9 +103,9 @@ else:    print("Invalid input. Please enter a number between 1 and 7.")
 
 
 month = int(input("Enter a month number (1-12): "))
-if month == 1, 3, 5, 7, 8, 10, 12:
+if month in (1, 3, 5, 7, 8, 10, 12):
     print("31 days")
-elif month == 4, 6, 9, 11:
+elif month in (4, 6, 9, 11):
     print("30 days")
 elif month == 2:
     print("28 or 29 days")
