@@ -34,3 +34,17 @@ if 1000 <= a <= 9999:
     else:
         print("The first and last digits are different.")
 else:    print("Number is not a 4-digit number.")   
+
+#check whether a given digit is single,double or multi digit
+a = int(input("enter a numer:"))
+if 0 <= a <= 9:
+    print("The digit is a single digit.")
+elif 10 <= a <= 99:
+    print("The digit is a double digit.")
+else:    print("The digit is a multi digit.")   
+
+#check if a number is multiple of seven or ends with 7
+a = int(input("enter a numer:"))
+if a % 7 == 0 or str(a).endswith('7'):
+    print("The number is a multiple of seven or ends with 7.")
+else:    print("The number is not a multiple of seven and does not end with 7.")
