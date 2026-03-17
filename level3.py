@@ -48,3 +48,29 @@ a = int(input("enter a numer:"))
 if a % 7 == 0 or str(a).endswith('7'):
     print("The number is a multiple of seven or ends with 7.")
 else:    print("The number is not a multiple of seven and does not end with 7.")
+
+
+#take co-ordinates (x,y) and determine the quadrant in which the point lies
+x = float(input("Enter the x-coordinate: "))
+y = float(input("Enter the y-coordinate: "))
+if x > 0 and y > 0:
+    print("The point lies in the first quadrant.")
+elif x < 0 and y > 0:
+    print("The point lies in the second quadrant.")
+elif x < 0 and y < 0:
+    print("The point lies in the third quadrant.")
+elif x > 0 and y < 0:
+    print("The point lies in the fourth quadrant.")
+else:    print("The point lies on the origin or on one of the axes.")
+
+
+#check if an amount can be evenly divided into 2000,500,and 100 currnecy notes 
+amount = int(input("Enter the amount: "))
+if amount % 100 == 0:
+    num_2000 = amount // 2000
+    amount %= 2000
+    num_500 = amount // 500
+    amount %= 500
+    num_100 = amount // 100
+    print(f"The amount can be divided into {num_2000} notes of 2000, {num_500} notes of 500, and {num_100} notes of 100.")
+else:    print("The amount cannot be evenly divided into 2000, 500, and 100 currency notes.")
