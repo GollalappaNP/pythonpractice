@@ -23,3 +23,14 @@ if 100 <= a <= 999:
     else:
         print("The middle digit is neither the largest nor the smallest.")
 else:    print("Number is not a 3-digit number.")
+
+
+#take  a 4 digit number and check if the first and last digits are the same. If they are, print "The first and last digits are the same." Otherwise, print "The first and last digits are different."
+a = int(input("enter a numer(1000-9999):"))
+if 1000 <= a <= 9999:
+    digits = [int(d) for d in str(a)]
+    if digits[0] == digits[3]:
+        print("The first and last digits are the same.")
+    else:
+        print("The first and last digits are different.")
+else:    print("Number is not a 4-digit number.")   
