@@ -89,3 +89,15 @@ if 0 < angle1 < 180 and 0 < angle2 < 180 and angle1 + angle2 < 180:
     angle3 = 180 - (angle1 + angle2)
     print(f"The third angle of the triangle is: {angle3} degrees.")
 else:    print("Invalid angles. The sum of the two angles must be less than 180 degrees, and each angle must be between 0 and 180 degrees.")
+
+
+#check whether a number is perfect square or not
+import math 
+a = int(input("enter a number:"))
+if a >= 0:
+    sqrt_a = int(math.sqrt(a))
+    if sqrt_a * sqrt_a == a:
+        print(f"{a} is a perfect square.")
+    else:
+        print(f"{a} is not a perfect square.")
+else:    print("Negative numbers cannot be perfect squares.")
