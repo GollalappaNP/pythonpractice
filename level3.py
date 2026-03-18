@@ -74,3 +74,9 @@ if amount % 100 == 0:
     num_100 = amount // 100
     print(f"The amount can be divided into {num_2000} notes of 2000, {num_500} notes of 500, and {num_100} notes of 100.")
 else:    print("The amount cannot be evenly divided into 2000, 500, and 100 currency notes.")
+
+#check if a number lies within range[100,999]
+a = int(input("enter a number:"))
+if 100 <= a <= 999:
+    print("The number lies within the range [100, 999].")
+else:    print("The number does not lie within the range [100, 999].")
