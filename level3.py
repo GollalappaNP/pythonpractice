@@ -80,3 +80,12 @@ a = int(input("enter a number:"))
 if 100 <= a <= 999:
     print("The number lies within the range [100, 999].")
 else:    print("The number does not lie within the range [100, 999].")
+
+
+#take two angles of a triangle and compute the third angle
+angle1 = float(input("Enter the first angle of the triangle: "))
+angle2 = float(input("Enter the second angle of the triangle: "))
+if 0 < angle1 < 180 and 0 < angle2 < 180 and angle1 + angle2 < 180:
+    angle3 = 180 - (angle1 + angle2)
+    print(f"The third angle of the triangle is: {angle3} degrees.")
+else:    print("Invalid angles. The sum of the two angles must be less than 180 degrees, and each angle must be between 0 and 180 degrees.")
