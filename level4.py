@@ -25,3 +25,11 @@ numbers = [a, b, c]
 numbers.sort()
 median = numbers[1]
 print("The median of the three numbers is:", median)
+
+#take a time in 24-hour format and determine if it is AM or PM
+time = int(input("Enter the time in 24-hour format (0-23): "))
+if 0 <= time < 12:
+    print("its AM")
+elif 12 <= time < 24:
+    print("its PM")
+else:    print("Invalid time entered. Please enter a number between 0 and 23.")
