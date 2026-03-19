@@ -5,3 +5,14 @@ if char.isalpha():
 elif char.isdigit():
     print("The character is a digit.")
 else:    print("The character is a special character.")
+
+
+#take a number 
+a = int(input("enter a number:"))
+if a %3 == 0:
+    print("Fizz")
+elif a %5 == 0:
+    print("Buzz")
+elif a %3 == 0 and a %5 == 0:
+    print("FizzBuzz")
+else:    print(a)
