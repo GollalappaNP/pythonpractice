@@ -33,3 +33,11 @@ if 0 <= time < 12:
 elif 12 <= time < 24:
     print("its PM")
 else:    print("Invalid time entered. Please enter a number between 0 and 23.")
+
+
+#take age and salary as input and determine if the person is eligible for tax. A person is eligible for tax if their age is greater than 18 and their salary is greater than 500000.
+age = int(input("Enter your age: "))
+salary = int(input("Enter your salary: "))
+if age > 18 and salary > 500000:
+    print("You are eligible for tax.")
+else:    print("You are not eligible for tax.")
