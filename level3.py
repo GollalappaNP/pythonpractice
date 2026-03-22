@@ -102,13 +102,21 @@ if a >= 0:
         print(f"{a} is not a perfect square.")
 else:    print("Negative numbers cannot be perfect squares.")
 
-#check whether a number is perfect square or not
-import math 
-a = int(input("enter a number:"))
-if a >= 0:
-    sqrt_a = int(math.sqrt(a))
-    if sqrt_a * sqrt_a == a:
-        print(f"{a} is a perfect square.")
-    else:
-        print(f"{a} is not a perfect square.")
-else:    print("Negative numbers cannot be perfect squares.")
+
+#take a digit and print its corresponding word (0 for "zero", 1 for "one", etc.). If the input is not a single digit, print "Invalid input."
+a = input("enter a digit:")
+if a.isdigit() and len(a) == 1:
+    digit_to_word = {
+        '0': "zero",
+        '1': "one",
+        '2': "two",
+        '3': "three",
+        '4': "four",
+        '5': "five",
+        '6': "six",
+        '7': "seven",
+        '8': "eight",
+        '9': "nine"
+    }
+    print(f"The corresponding word for the digit {a} is: {digit_to_word[a]}.")
+else:    print("Invalid input. Please enter a single digit (0-9).") 
