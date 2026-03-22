@@ -101,3 +101,14 @@ if a >= 0:
     else:
         print(f"{a} is not a perfect square.")
 else:    print("Negative numbers cannot be perfect squares.")
+
+#check whether a number is perfect square or not
+import math 
+a = int(input("enter a number:"))
+if a >= 0:
+    sqrt_a = int(math.sqrt(a))
+    if sqrt_a * sqrt_a == a:
+        print(f"{a} is a perfect square.")
+    else:
+        print(f"{a} is not a perfect square.")
+else:    print("Negative numbers cannot be perfect squares.")
