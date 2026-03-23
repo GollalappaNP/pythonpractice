@@ -1,12 +1,15 @@
-print("hello world")
-def reverse_string(s):
-    return s[::-1]
+def is_palindrome(number):
+    # Convert the number to a string
+    num_str = str(number)
+    # Check if the string is equal to its reverse
+    return num_str == num_str[::-1]
 
 # Example usage
-print(reverse_string("hello"))
-
-a = int(input("Enter a number: "))
-if a % 2 == 0:
-    print(f"{a} is even.")
-else:
-    print(f"{a} is odd.")
+if __name__ == "__main__":
+    num = int(input("Enter an integer: "))
+    if is_palindrome(num):
+        print(f"{num} is a palindrome.")
+    else:
+        print(f"{num} is not a palindrome.")
+       
+       
